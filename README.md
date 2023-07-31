@@ -25,3 +25,44 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Features:
+
+Add Events on the Calendar:
+
+To add a new event, the user needs to click on the "New" button on the calendar.
+A popup will open, allowing the user to enter the event detail and date of the event.
+After entering the required information, the user can click on the "Save" button to create the event.
+
+
+Edit Events:
+
+To edit an existing event, the user can click on the event on the calendar.
+An options menu (e.g., Delete/Edit) will appear, and the user can select "Edit" from the options.
+An edit event dialog will open, displaying the current details of the event.
+The user can update the title and date of the event and then click on the "Save" button to save the changes.
+
+
+Delete Events:
+
+To delete an existing event, the user can click on the event on the calendar.
+An options menu (e.g., Delete/Edit) will appear, and the user can click on bin icon.
+
+
+Change Date of the Event:
+
+Users can change the date of an event by performing a drag and drop operation.
+They need to click and hold the event on the calendar and then drag it to the desired date.
+Upon dropping the event on the new date, the event will be updated with the new date.
+
+
+Change Month by Navigation on the Top Bar:
+
+The top bar of the calendar contains navigation controls to switch between months by clicking on month.
+Users can click on the previous or next arrows to navigate to the previous or next year, respectively.
+The calendar will automatically update to display the events for the selected month.
+
+Theme Provided
+
+Dark and Light theme added
