@@ -1,0 +1,28 @@
+<div class="dialog-title">
+    <h2 mat-dialog-title>Event Dialog</h2>
+    <mat-icon (click)="onCloseClick()">close</mat-icon>
+</div>
+<mat-dialog-content>
+    <mat-icon (click)="closeDialog('delete')" *ngIf="data.type == 'update'" class="bin-style">delete</mat-icon>
+    <div>
+        <mat-form-field>
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" name="date" ngDefaultControl required [(ngModel)]='date'>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field>
+            <mat-label>Event</mat-label>
+            <input matInput name="text" ngDefaultControl #input2 required [(ngModel)]='text'>
+        </mat-form-field>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+
+
+    <button mat-button [disabled]="!text?.length || !date" (click)="closeDialog(data.type)">Save</button>
+</mat-dialog-actions>
